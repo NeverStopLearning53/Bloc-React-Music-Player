@@ -1,0 +1,181 @@
+body {
+  /* background-size: cover;
+  transform: skew(14deg, -13deg); 
+  margin: 0; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* The following code was downloaded from a Custom Audio Player Git Hub Account and Adopted for this Project
+Credit Needs to be given to the following Git Hub Account where this code was taken from DaftCreation/Custom-Audio-Player */
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+#bkGround {
+  height: 200vh;
+  width: 100%;
+  opacity: 0.6;
+  background-size: stretch;
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#bkGround img {
+  height: 120vh;
+  width: 105%;
+  -webkit-filter: blur(20px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+#headr {
+  z-index: 2;
+}
+
+.album-info {
+  position: absolute;
+  left: 0px;
+  top: 20px;
+  z-index: 2;
+}
+
+/* #blurred-background {
+  #bg img { this was ID-Background Image Music Player Code
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: rgb(101, 138, 241);
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+} */
+
+#foreground {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4); /*Black w/opacity/see-through */
+  z-index: 2;
+}
+
+#blackLayer {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: 99;
+}
+
+/* #main {
+  width: 25%;
+  background-color: #fff;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+} */
+
+#image img {
+  height: 180px;
+  width: 100%;
+  margin-top: -5px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+#player {
+  padding: 25px;
+  color: #333;
+}
+/* #song-title {
+  width: 300px;
+  text-align: center;
+  font-family: monospace;
+  font-size: 18px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+#buttons {
+  height: 50px;
+  width: 100%;
+  margin-top: 50px;
+  position: relative;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#play-pause,
+#next,
+#previous {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  background-color: royalblue;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#next {
+  width: 40px;
+  height: 40px;
+  left: 60%;
+}
+#previous {
+  width: 40px;
+  height: 40px;
+  left: 40%;
+}
+#play-pause img,
+#next img,
+#previous img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.seek-bar {
+  width: 250px;
+  height: 5px;
+  background-color: rgb(12, 11, 11);
+  /* display: flex; */
+  border-radius: 50px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+#fill {
+  height: 5px;
+  background-color: royalblue;
+  border-radius: 20px;
+}
+#handle {
+  width: 8px;
+  height: 8px;
+  background-color: royalblue;
+  border-radius: 50%;
+  margin-left: -5px;
+  transform: scale(2);
+}
