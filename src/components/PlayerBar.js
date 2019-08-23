@@ -27,11 +27,11 @@ class PlayerBar extends Component {
         </section>
         <section id="time-control">
           <div className="current-time">
-            {this.formatTime(this.props.currentTime)} Min:Sec
+            {this.formatTime(this.props.currentTime)}
           </div>
           <input
             type="range"
-            className="seek-bar"
+            className="seek-bar-for-time"
             value={this.props.currentTime / this.props.duration || 0}
             max="1"
             min="0"
@@ -39,7 +39,7 @@ class PlayerBar extends Component {
             onChange={this.props.handleTimeChange}
           />
           <div className="total-time">
-            {this.formatTime(this.props.duration)} Min:Sec
+            {this.formatTime(this.props.duration)} Min/Sec
           </div>
         </section>
         <section id="volume-control">
@@ -47,7 +47,7 @@ class PlayerBar extends Component {
           <input
             type="range"
             slider="vertical"
-            className="seek-bar"
+            className="seek-bar-for-volume"
             value={this.props.volume}
             max="1"
             min="0"

@@ -1,0 +1,9 @@
+# Directories to be ignored
+.DS_Store
+npm-debug.log
+favicon.png
+node_modules
+coverage
+public
+lib
+umd
